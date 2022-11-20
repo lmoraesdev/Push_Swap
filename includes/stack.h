@@ -6,12 +6,12 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:45:39 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/05 00:24:46 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/20 18:03:13 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STACK_H
-# define STACK_H
+#define STACK_H
 
 typedef struct s_node
 {

@@ -6,12 +6,12 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:45:36 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/05 00:26:11 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/20 18:02:59 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SORT_H
-# define SORT_H
+#define SORT_H
 
 typedef struct s_sort
 {

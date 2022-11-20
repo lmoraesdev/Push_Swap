@@ -6,12 +6,12 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:45:28 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/05 00:26:29 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/20 18:02:28 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MOVES_H
-# define MOVES_H
+#define MOVES_H
 
 void swap(t_stack *stack);
 void rotate_top_to_bottom(t_stack *stack);

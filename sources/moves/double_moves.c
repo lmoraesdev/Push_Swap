@@ -6,13 +6,13 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:00:11 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/03 17:08:29 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/20 18:04:11 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void double_swap(t_stack *stacks)
+void double_swap(t_stacks *stacks)
 {
 	if (!stacks || !stacks->stack_a || !stacks->stack_a)
 		return;
@@ -21,7 +21,7 @@ void double_swap(t_stack *stacks)
 	write(1, "ss\n", 3);
 }
 
-void double_rotate_top_bottom(t_stacks *stacks)
+void double_rotate_top_to_bottom(t_stacks *stacks)
 {
 	if (!stacks || !stacks->stack_a || !stacks->stack_a)
 		return;
