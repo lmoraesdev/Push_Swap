@@ -6,13 +6,13 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:13:14 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:07:34 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:57:23 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void sort_two_at_top_b(t_stacks *stacks)
+void	sort_two_at_top_b(t_stacks *stacks)
 {
 	if (stacks)
 	{
@@ -23,7 +23,7 @@ void sort_two_at_top_b(t_stacks *stacks)
 	}
 }
 
-static void bigger_first(t_stacks *stacks, t_sort *sort)
+static void	bigger_first(t_stacks *stacks, t_sort *sort)
 {
 	if (sort->second < sort->third)
 	{
@@ -33,13 +33,15 @@ static void bigger_first(t_stacks *stacks, t_sort *sort)
 	}
 }
 
-static void average_first(t_stacks *stacks, t_sort *sort)
+static void	average_first(t_stacks *stacks, t_sort *sort)
 {
-	if (sort->first < sort->second && sort->second > sort->third && sort->third < sort->first)
+	if (sort->first < sort->second
+		&& sort->second > sort->third && sort->third < sort->first)
 	{
 		single_swap(stacks->stack_b);
 	}
-	else if (sort->first > sort->second && sort->second < sort->third && sort->third > sort->first)
+	else if (sort->first > sort->second
+		&& sort->second < sort->third && sort->third > sort->first)
 	{
 		single_rotate_top_to_bottom(stacks->stack_b);
 		single_swap(stacks->stack_b);
@@ -48,7 +50,7 @@ static void average_first(t_stacks *stacks, t_sort *sort)
 	}
 }
 
-static void smallest_first(t_stacks *stacks, t_sort *sort)
+static void	smallest_first(t_stacks *stacks, t_sort *sort)
 {
 	if (sort->second < sort->third)
 	{
@@ -67,9 +69,9 @@ static void smallest_first(t_stacks *stacks, t_sort *sort)
 	}
 }
 
-void sort_three_at_top_b(t_stacks *stacks)
+void	sort_three_at_top_b(t_stacks *stacks)
 {
-	t_sort sort;
+	t_sort	sort;
 
 	if (stacks)
 	{
@@ -79,7 +81,8 @@ void sort_three_at_top_b(t_stacks *stacks)
 		sort.index = 3;
 		if (sort.first < sort.second && sort.first < sort.third)
 			smallest_first(stacks, &sort);
-		else if ((sort.first < sort.second && sort.first > sort.third) || (sort.first > sort.second && sort.first < sort.third))
+		else if ((sort.first < sort.second && sort.first > sort.third)
+			|| (sort.first > sort.second && sort.first < sort.third))
 			average_first(stacks, &sort);
 		else if (sort.first > sort.second && sort.first > sort.third)
 			bigger_first(stacks, &sort);

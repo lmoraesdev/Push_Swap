@@ -6,16 +6,16 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:09:59 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:06:10 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:51:35 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int find_smallest(t_stack *stack)
+int	find_smallest(t_stack *stack)
 {
-	t_node *aux;
-	int i;
+	t_node		*aux;
+	int			i;
 
 	aux = stack->top;
 	i = aux->value;
@@ -28,10 +28,10 @@ int find_smallest(t_stack *stack)
 	return (i);
 }
 
-int find_highest(t_stack *stack)
+int	find_highest(t_stack *stack)
 {
-	t_node *aux;
-	int i;
+	t_node		*aux;
+	int			i;
 
 	aux = stack->top;
 	i = aux->value;

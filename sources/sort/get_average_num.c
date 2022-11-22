@@ -6,15 +6,15 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:10:33 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:06:26 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:50:49 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int return_average(int *arr, int size, int flag)
+static int	return_average(int *arr, int size, int flag)
 {
-	int average;
+	int	average;
 
 	if (flag == 0)
 	{
@@ -34,11 +34,11 @@ static int return_average(int *arr, int size, int flag)
 	return (average);
 }
 
-static int sort_array(int *arr, int size, int flag)
+static int	sort_array(int *arr, int size, int flag)
 {
-	int i;
-	int j;
-	int tmp;
+	int	i;
+	int	j;
+	int	tmp;
 
 	i = 0;
 	while (i < size)
@@ -59,11 +59,11 @@ static int sort_array(int *arr, int size, int flag)
 	return (return_average(arr, size, flag));
 }
 
-static int fill_array(t_stack *stack, int size, int flag)
+static int	fill_array(t_stack *stack, int size, int flag)
 {
-	int *arr;
-	int index;
-	t_node *aux;
+	int				*arr;
+	int				index;
+	t_node			*aux;
 
 	arr = malloc(size * sizeof(int *));
 	aux = stack->top;
@@ -77,9 +77,9 @@ static int fill_array(t_stack *stack, int size, int flag)
 	return (sort_array(arr, size, flag));
 }
 
-int get_average_num(t_stack *stack, int size, int flag)
+int	get_average_num(t_stack *stack, int size, int flag)
 {
-	int average;
+	int	average;
 
 	average = fill_array(stack, size, flag);
 	return (average);

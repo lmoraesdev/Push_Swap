@@ -6,15 +6,15 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:11:49 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:01:11 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:38:40 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static size_t get_size(int n)
+static size_t	get_size(int n)
 {
-	size_t size;
+	size_t	size;
 
 	size = 0;
 	if (n == 0)
@@ -36,7 +36,7 @@ static size_t get_size(int n)
 	return (size);
 }
 
-static char *nbr(long int n, char *new_string, size_t size)
+static char	*nbr(long int n, char *new_string, size_t size)
 {
 	if (n < 0)
 	{
@@ -50,11 +50,11 @@ static char *nbr(long int n, char *new_string, size_t size)
 	return (new_string);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	char *new_word;
-	size_t size;
-	long int n2;
+	char		*new_word;
+	size_t		size;
+	long int	n2;
 
 	n2 = n;
 	size = get_size(n);

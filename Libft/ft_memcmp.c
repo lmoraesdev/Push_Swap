@@ -6,13 +6,13 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:21:34 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:16:02 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:33:29 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcmp(const void *str1, const void *str2, size_t n)
+int	ft_memcmp(const void *str1, const void *str2, size_t n)
 {
 	if (!str1 && !str2)
 		return (0);

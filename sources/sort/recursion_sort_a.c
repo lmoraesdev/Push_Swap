@@ -6,13 +6,13 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:12:01 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:06:54 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:43:09 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void sort(t_stacks *stacks, int block_size)
+static void	sort(t_stacks *stacks, int block_size)
 {
 	if (block_size == 2)
 		sort_two_at_top(stacks);
@@ -20,7 +20,7 @@ static void sort(t_stacks *stacks, int block_size)
 		sort_three_nodes(stacks);
 }
 
-static int push_middle(t_stacks *stacks, int *rotation_count, int middle)
+static int	push_middle(t_stacks *stacks, int *rotation_count, int middle)
 {
 	push(stacks->stack_a, stacks->stack_b);
 	if (stacks->stack_a->top->value > middle)
@@ -33,12 +33,12 @@ static int push_middle(t_stacks *stacks, int *rotation_count, int middle)
 	return (1);
 }
 
-static int send_block(t_stacks *stacks, int send_block, int middle,
+static int	send_block(t_stacks *stacks, int send_block, int middle,
 											int rotated)
 {
-	int rotation_count;
-	int middle_moved;
-	int less_three;
+	int	rotation_count;
+	int	middle_moved;
+	int	less_three;
 
 	rotation_count = 0;
 	middle_moved = 0;
@@ -63,16 +63,16 @@ static int send_block(t_stacks *stacks, int send_block, int middle,
 	return (middle_moved);
 }
 
-void recursion_sort_a(t_stacks *stacks, int block_size, int rotated)
+void	recursion_sort_a(t_stacks *stacks, int block_size, int rotated)
 {
-	int send_size;
-	int middle;
-	int middle_moved;
+	int	send_size;
+	int	middle;
+	int	middle_moved;
 
 	if (block_size < 4)
 	{
 		sort(stacks, block_size);
-		return;
+		return ;
 	}
 	if ((block_size % 2) == 0)
 		send_size = (block_size / 2);

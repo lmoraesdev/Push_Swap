@@ -6,17 +6,17 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:16:52 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:08:33 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:39:24 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void sort_three_nodes_stack(t_stack *stack)
+void	sort_three_nodes_stack(t_stack *stack)
 {
-	int begin;
-	int middle;
-	int top;
+	int	begin;
+	int	middle;
+	int	top;
 
 	begin = stack->begin->value;
 	middle = stack->begin->next->value;

@@ -6,15 +6,15 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:16:33 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:08:04 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:39:32 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void sort_five_nodes_stack(t_stack *stack_a, t_stack *stack_b)
+void	sort_five_nodes_stack(t_stack *stack_a, t_stack *stack_b)
 {
-	int average;
+	int	average;
 
 	average = get_average_num(stack_a, stack_a->size, 1);
 	while (stack_a->size > 3)

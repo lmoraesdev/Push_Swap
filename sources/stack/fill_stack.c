@@ -6,13 +6,13 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:21:54 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:09:20 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:12:38 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void fill_stack(char **argv, int argc, t_stacks *stacks)
+void	fill_stack(char **argv, int argc, t_stacks *stacks)
 {
 	while (argc-- > 1)
 	{

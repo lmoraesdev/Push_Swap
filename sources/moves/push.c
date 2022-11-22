@@ -6,13 +6,13 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:05:06 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:04:33 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:10:34 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void empty_after_push_to_empty(t_stack *src, t_stack *dst)
+static void	empty_after_push_to_empty(t_stack *src, t_stack *dst)
 {
 	dst->top = src->top;
 	dst->begin = src->begin;
@@ -20,7 +20,7 @@ static void empty_after_push_to_empty(t_stack *src, t_stack *dst)
 	src->begin = NULL;
 }
 
-static void empty_after_push_to_not_empty(t_stack *src, t_stack *dst)
+static void	empty_after_push_to_not_empty(t_stack *src, t_stack *dst)
 {
 	dst->top->next = src->top;
 	src->top->prev = dst->top;
@@ -29,7 +29,7 @@ static void empty_after_push_to_not_empty(t_stack *src, t_stack *dst)
 	src->begin = NULL;
 }
 
-static void not_empty_after_push_to_empty(t_stack *src, t_stack *dst)
+static void	not_empty_after_push_to_empty(t_stack *src, t_stack *dst)
 {
 	dst->top = src->top;
 	dst->begin = src->top;
@@ -38,7 +38,7 @@ static void not_empty_after_push_to_empty(t_stack *src, t_stack *dst)
 	src->top->next = NULL;
 }
 
-static void not_empty_after_push_to_not_empty(t_stack *src, t_stack *dst)
+static void	not_empty_after_push_to_not_empty(t_stack *src, t_stack *dst)
 {
 	dst->top->next = src->top;
 	src->top = src->top->prev;
@@ -47,10 +47,10 @@ static void not_empty_after_push_to_not_empty(t_stack *src, t_stack *dst)
 	dst->top = dst->top->next;
 }
 
-void push(t_stack *src, t_stack *dst)
+void	push(t_stack *src, t_stack *dst)
 {
 	if (!src || !dst || src->size == 0)
-		return;
+		return ;
 	if (dst->name == 'a')
 		write(1, "pa\n", 3);
 	else if (dst->name == 'b')

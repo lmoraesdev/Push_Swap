@@ -6,17 +6,17 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:29:44 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:18:50 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:39:14 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char *new_word;
-	size_t strings_size;
-	size_t i;
+	char		*new_word;
+	size_t		strings_size;
+	size_t		i;
 
 	if (!s1 || !s2)
 		return (0);

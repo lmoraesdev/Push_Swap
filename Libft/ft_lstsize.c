@@ -6,15 +6,15 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:18:04 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:15:28 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:33:01 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (lst)

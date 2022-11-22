@@ -6,16 +6,16 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:05:51 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:00:00 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:30:49 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_calloc(size_t n, size_t size)
+void	*ft_calloc(size_t n, size_t size)
 {
-	size_t i;
-	unsigned char *p;
+	size_t			i;
+	unsigned char	*p;
 
 	i = 0;
 	p = malloc(n * size);

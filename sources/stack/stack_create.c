@@ -6,15 +6,15 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:23:29 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:10:13 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:13:15 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_stack *stack_create(char name)
+t_stack	*stack_create(char name)
 {
-	t_stack *stack;
+	t_stack	*stack;
 
 	stack = malloc(sizeof(t_stack));
 	if (!stack)

@@ -6,13 +6,13 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:53:39 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:10:30 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:36:40 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static void call_algo(t_stacks *stacks, int size)
+static void	call_algo(t_stacks *stacks, int size)
 {
 	if (!is_sorted_asceding(stacks->stack_a))
 	{
@@ -27,9 +27,9 @@ static void call_algo(t_stacks *stacks, int size)
 	}
 }
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	t_stacks *stacks;
+	t_stacks	*stacks;
 
 	check_arguments(argv, argc);
 	if (argc < 2)

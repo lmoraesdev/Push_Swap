@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   create_stack.c                                     :+:      :+:    :+:   */
+/*   create_stacks.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:21:15 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 17:58:27 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:13:22 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-t_stacks *create_stacks(void)
+t_stacks	*create_stacks(void)
 {
-	t_stacks *stacks;
+	t_stacks	*stacks;
 
 	stacks = malloc(sizeof(t_stacks));
 	if (!stacks)

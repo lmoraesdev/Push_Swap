@@ -6,21 +6,21 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:18:04 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:08:58 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:13:39 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void add_node(t_stack *stack, int value)
+void	add_node(t_stack *stack, int value)
 {
-	t_node *node;
+	t_node	*node;
 
 	if (!stack)
-		return;
+		return ;
 	node = node_create(value);
 	if (!node)
-		return;
+		return ;
 	if (stack->size == 0)
 	{
 		stack->top = node;

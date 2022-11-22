@@ -6,16 +6,16 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:27:33 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:18:19 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:37:55 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s)
+char	*ft_strdup(const char *s)
 {
-	size_t size;
-	char *new_word;
+	size_t		size;
+	char		*new_word;
 
 	size = ft_strlen(s);
 	new_word = malloc(sizeof(char) * (size + 1));

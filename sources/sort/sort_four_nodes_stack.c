@@ -6,16 +6,16 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:16:40 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:08:20 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:50:13 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int get_index(t_stack *stack, int value)
+static int	get_index(t_stack *stack, int value)
 {
-	t_node *aux;
-	int count;
+	t_node		*aux;
+	int			count;
 
 	count = 0;
 	if (stack)
@@ -32,9 +32,9 @@ static int get_index(t_stack *stack, int value)
 	return (count);
 }
 
-void sort_four_nodes_stack(t_stacks *stacks)
+void	sort_four_nodes_stack(t_stacks *stacks)
 {
-	int smallest;
+	int	smallest;
 
 	if (stacks)
 	{

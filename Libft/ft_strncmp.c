@@ -6,13 +6,13 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:33:21 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:20:03 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:35:28 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_strncmp(const char *str1, const char *str2, size_t n)
+int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	if (n == 0)
 		return (0);

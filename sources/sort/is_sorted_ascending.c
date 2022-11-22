@@ -6,15 +6,15 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 17:11:16 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:06:38 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 22:41:31 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int is_sorted_asceding(t_stack *stack)
+int	is_sorted_asceding(t_stack *stack)
 {
-	t_node *aux;
+	t_node	*aux;
 
 	if (!stack || stack->size == 0)
 		return (1);

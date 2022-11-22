@@ -6,15 +6,15 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:26:12 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:17:55 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:36:58 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int get_words_number(char const *str, char c)
+static int	get_words_number(char const *str, char c)
 {
-	int d;
+	int	d;
 
 	d = 0;
 	while (*str)
@@ -29,9 +29,9 @@ static int get_words_number(char const *str, char c)
 	return (d);
 }
 
-static int get_word_size(char const *str, char c)
+static int	get_word_size(char const *str, char c)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (*str && *str != c)
@@ -42,11 +42,11 @@ static int get_word_size(char const *str, char c)
 	return (i);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	char **arr_words;
-	size_t word_size;
-	size_t i;
+	char		**arr_words;
+	size_t		word_size;
+	size_t		i;
 
 	i = 0;
 	arr_words = malloc(sizeof(char *) * (get_words_number(s, c) + 1));

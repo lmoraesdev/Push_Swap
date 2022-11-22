@@ -6,11 +6,11 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 16:11:33 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 18:13:29 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:31:18 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }

@@ -6,17 +6,17 @@
 /*   By: lbatista <lbatista@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 15:43:02 by lbatista          #+#    #+#             */
-/*   Updated: 2022/11/20 17:59:21 by lbatista         ###   ########.fr       */
+/*   Updated: 2022/11/21 23:37:37 by lbatista         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int sign;
-	int numb;
-	int i;
+	int	sign;
+	int	numb;
+	int	i;
 
 	sign = 1;
 	numb = 0;
